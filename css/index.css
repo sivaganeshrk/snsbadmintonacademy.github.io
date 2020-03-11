@@ -1,0 +1,26 @@
+.header{
+	color: #000000;
+	width: 100%;
+	left: 0;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer {
+    left: 0;
+    width: 100%;
+    color: #000000;
+	text-align: center;
+	box-shadow: 0px -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+	background-image: url("https://snsbadmintonacademy.000webhostapp.com/images/603478_631257.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 18%;
+}
+.container{
+	width: 100%;
+	margin-bottom: 20px;
+}
