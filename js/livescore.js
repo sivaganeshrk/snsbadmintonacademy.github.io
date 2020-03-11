@@ -1,0 +1,14 @@
+$(document).ready(function(){
+			setInterval(function(){
+				$('#oneup').load('load.php?p=up&no=1')
+				$('#onedown').load('load.php?p=down&no=1')
+				$('#twoup').load('load.php?p=up&no=2')
+				$('#twodown').load('load.php?p=down&no=2')
+				$('#threeup').load('load.php?p=up&no=3')
+				$('#threedown').load('load.php?p=down&no=3')
+				$('#fourup').load('load.php?p=up&no=4')
+				$('#fourdown').load('load.php?p=down&no=4')
+				$('#fiveup').load('load.php?p=up&no=5')
+				$('#fivedown').load('load.php?p=down&no=5')
+			},5000);
+		});
