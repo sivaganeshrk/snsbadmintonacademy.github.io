@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Court Details | SNS Badminton Academy</title>
+	<link rel="stylesheet" type="text/css" href="css/livescore.css">
+	<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<!-- Header -->
+	<div class="header">
+		<div class="row">
+			<div class="col-sm-2">
+				<img src="/images/SNSBadmintonAcademyLogo.png" height="100" width="100">
+			</div>
+			<div class="col-sm-8">
+				<center><h1 style="font-family: 'Aldrich', sans-serif; padding-top: 0.6em; text-align: center;">SNS BADMINTON ACADEMY</h1></center>
+			</div>
+			<div class="col-sm-2">
+				<img src="/images/SNS-Institutions-logo.png" height="80" width="100" style="padding-top: 18px; float: right; padding-right: 15px;">
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+      			<li class="nav-item active">
+        			<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="updatecourt.html">Update Court</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="updatescore.php">Update Score</a>
+      			</li>
+      		</ul>
+  		</div>
+	</nav>
+	<div class="container-fluid" style="padding-top: 20px; padding-bottom: 20px;" align="center">
+		<div class="card text-center" style="width: 400px;">
+			<div class="card-header"><strong><span style="font-size: 22px;">Update the Court Details</span></strong></div>
+			<div class="card-body">
+				<form action="updatecourt.php" method="POST">
+			<table>
+				<tr>
+					<td>
+						<label for="courtno">Court Number</label>
+					</td>
+					<td>
+						<select class="form-control" id="courtno" name="no" style="width: auto; margin:10px;">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-bottom: 10px; padding-top: 10px;">
+						<label for="type">Event</label>
+					</td>
+					<td style="padding-bottom: 10px; padding-top: 10px; padding-left: 25px; text-align: left;">
+						<input class="form-check-input" type="radio" name="type" id="type" value="s">Singles<br>
+						<input class="form-check-input" type="radio" name="type" id="type" value="d">Doubles
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-bottom: 10px; padding-top: 10px;">
+						<label for="playerone">Player 1</label>
+					</td>
+					<td>
+						<input class="form-control" type="text" name="playerone" id="playerone" placeholder="Player 1">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="playertwo">Player 2</label>
+					</td>
+					<td>
+						<input class="form-control" type="text" name="playertwo" id="playertwo" placeholder="Player 2">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="padding-bottom: 10px; padding-top: 10px;"><i>Fill Player 3 and Player 4 only for Doubles</i></td>
+				</tr>
+				<tr>
+					<td style="padding-bottom: 10px; padding-top: 10px;">
+						<label for="playerthree">Player 3</label>
+					</td>
+					<td>
+						<input class="form-control" type="text" name="playerthree" id="playerthree" placeholder="Player 3">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="playerfour">Player 4</label>
+					</td>
+					<td>
+						<input class="form-control" type="text" name="playerfour" id="playerfour" placeholder="Player 4">
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-top: 15px;" colspan="2"><input type="submit" name="submit" value="Add Details" class="btn btn-primary"></td>
+				</tr>
+			</table>
+		</form>	
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="row">
+			<div class="col-sm-12">
+				<p style="padding-top: 0.5em;">SNS Badminton Academy</p>	
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/livescore.js"></script>
+</body>
+</html>
